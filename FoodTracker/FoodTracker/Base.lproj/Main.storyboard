@@ -85,12 +85,13 @@
                     <connections>
                         <outlet property="mealNameLabel" destination="Rgi-1T-lMt" id="U27-yQ-ITy"/>
                         <outlet property="nameTextField" destination="pnx-D6-KFr" id="kPr-dF-Csa"/>
+                        <outlet property="photoImageView" destination="nNe-cH-INH" id="1t7-TS-Jec"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="gER-ru-GXV">
                     <connections>
-                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="xT2-4x-Sii"/>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="Tag-0I-qTx"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
