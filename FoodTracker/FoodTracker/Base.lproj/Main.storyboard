@@ -51,9 +51,13 @@
                                                         <subviews>
                                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="nNe-cH-INH">
                                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="320"/>
+                                                                <gestureRecognizers/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="nNe-cH-INH" secondAttribute="height" multiplier="9:10" id="bVx-cO-ThI"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="gER-ru-GXV" appends="YES" id="Qgp-i8-crB"/>
+                                                                </connections>
                                                             </imageView>
                                                         </subviews>
                                                     </stackView>
@@ -84,6 +88,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gER-ru-GXV">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="xT2-4x-Sii"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="234" y="406"/>
         </scene>
